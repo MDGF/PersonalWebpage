@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parker Yadloski's Portfolio</title>
+<link type="text/css" rel="stylesheet" href="styleSheet.css">
+</head>
+<body>
+	<h1>|	Parker Yadloski	|</h1>
+	<article>
+	<h2>Greetings!</h2>
+	<p>GREETINGS FELLOW TRAVELER! Thank you for coming to see my webpage.<br/>
+	I know that it is not complete right now but my page will be better<br/>
+	soon. Just give me time.
+	</p>
+	</article>
+	
+	<article>
+	<h2><hr/>Education Goals</h2>
+	<p>My goals are to expand my education as a whole and learn new information<br/>
+	that will let me go into and stand out into the programming and web application<br/>
+	fields in whole. I personally would like to impress potential employers and learn<br/>
+	as much as possible to become more experienced in what I do.
+	</p>
+	</article>
+	
+	<article>
+	<h2><hr/>Employment Goals</h2>
+	<p>The employment goals that I have set are to work as a programmer under a large<br/>
+	company and to work my way up through said company. I also want to gain as much experience<br/>
+	out of the job I acquire. From there I will improve myself at an astonishing rate and become<br/>
+	a well desired and sought-after programmer.
+	</p>
+	</article>
+	<br/> <img src="logo.png" alt="The Logo" style="width:218px;height:218px;">
+	
+	<footer><h4> |	&copy; 2016 All Rights Reserved	|	Parker Yadloski	|	yadloskiprogramming@gmail.com	|</h4></footer>
+</body>
+</html>
