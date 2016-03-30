@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Parker - About</title>
+<link type="text/css" rel="stylesheet" href="styleSheet.css">
+
+<script>
+var x = document.getElementById("map");
+
+function geoFindMe() {
+  var output = document.getElementById("out");
+
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
+  }
+
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+
+    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+
+    var img = new Image();
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+
+    output.appendChild(img);
+  };
+
+  function error() {
+    output.innerHTML = "Unable to retrieve your location";
+  };
+
+  output.innerHTML = "<p>Locating…</p>";
+
+  navigator.geolocation.getCurrentPosition(success, error);
+}
+</script>
+
+</head>
+<body>
+	<div id="container">
+	<header>
+	<h1>|	Parker Yadloski	|</h1>
+	</header>
+	
+<nav>	
+	<ul>
+		<b><li><a href="index.html">Home</a></li>
+		<li><a id="active" href="aboutMe.html">About Me</a></li>
+		<li><a href="projects.html">CPP Projects</a></li>
+		<li><a href="WebDesign.html">Web Design</a></li>
+		<li><a href="Java.html">Java</a></li>
+		<li><a href="Other.html">Other</a></li>
+		<li><a href="BPA.html">BPA</a></li>
+		<li><a href="contact.html">Contact Me</a></li></b>
+		<li style="float:right;"><a href = "https://www.linkedin.com/in/parker-yadloski-b3aa51116?trk=hp-identity-name"><img id="link"
+		 src = "Images/link.png">
+		</a>
+		<li style="float:right;"><a href = "https://plus.google.com/u/0/104890526176070004455/posts/p/pub?hl=en"><img id="Gplus"
+		 src = "Images/google.png">
+		</a>
+	</ul>
+</nav>	
+	
+	<hr/>
+
+	<img id="face" style="padding-top: 2%;" src="Images/Pyadloski.gif" alt="ME">
+	<h5 style="color:#5B5686;">Hover over me!!! ^^^</h5>
+	
+	<article id="family" class="seperation">
+	<h2>Family</h2>
+	<p>My family is one of the biggest things in my life. I have an older brother<br/>
+	that is almost 22. Also I have my mother and father. I also have a corgi named<br/>
+	Cadbury, like the chocolate company of the same name. At home I help my family <br/>
+	out in ways that I can. I care about my family like almost everyone else. 
+	</p>
+	</article>
+	
+	<article id="about" class="seperation">
+	<br/><br/>
+	<h2 style="border-top-style:solid; border-color:#333; padding-top:5%;">A little about me</h2>
+	<p >I am a junior at Miami Valley Career Tech Center and my homeschool is
+	Miamisburg High School. I'm not involved in any school sports but I have been
+	doing various martial arts. I've done taekwondo a while ago
+	and I've been doing Muay Thai for about the same time. That is what I'm currently
+	in. I go to JGMMA in Franklin. I have been working at a local pizza place in 
+	Miamisburg called, Pappa's Pizza Palace for about a year. 
+	</p>
+	</article>
+	
+
+
+<p><button style="background-color:#333; color:#C79B23;" onclick="geoFindMe()">Show my location</button></p>
+<div id="out"> </div>
+
+	<br/>
+	
+	<footer><h4> |	&copy; 2016 All Rights Reserved	|	Parker Yadloski	|	<a href="mailto:yadloskiprogramming@gmail.com">yadloskiprogramming@gmail.com</a>	|</h4></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+* {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+@media print {
+	header, nav, footer {
+		display: none;
+	}
+	img {
+		max-width:200px;
+	}
+	ul {
+		list-style:none;
+	}
+}
+
+body {
+	display:block;
+	background-image: url("Images/sides.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+h1{
+	position:relative;
+	color:#C79B23;
+	text-align:center;
+	font-family:Monaco;
+	font-size:250%;
+}
+
+h2, h3{
+	color:#5B5686;	
+}
+
+
+footer{
+	color:#C79B23;
+	border-style:solid;
+	border-color:#000000;
+	text-align: center;
+	background-color:#447373;
+	padding:5px;
+	bottom: 5px;
+}
+
+nav {
+	margin-left:5px;
+	margin-right:5px;
+	border-bottom-style:solid;
+	border-color:#C79B23;
+	margin-bottom: 2%;
+}
+
+header {
+	background-color:#447373;
+	border-style:solid;
+	border-color:#C79B23;
+	margin: 20px;
+	padding:10px;
+}
+
+div.seperation{
+	border-bottom-style: solid;
+}
+
+p:first-letter {
+	font-size:18pt;
+	color:#C79B23;
+}
+
+a:link {
+	color:#C79B23;
+	text-decoration:none;
+}
+
+ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:#333;
+	color:#C79B23;
+}
+
+li {
+	float:left;
+}
+
+li a {
+	display:block;
+	color:#C79B23;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Monaco;
+	font-size: 14pt;
+}
+
+a:hover {
+	background-color:#333;
+}
+
+#active {
+	background-color:#447373;
+}
+
+#link {
+	border-style:solid;
+	width:24px;
+	height:24px;
+}
+
+#Gplus {
+	border-style:solid;
+	width:24px;
+	height:24px;
+}
+
+#container {
+	
+	background-color: #FFFFFF;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+#container p {
+	position: relative;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 12pt;
+	
+}
+
+
+#container h2, #container h3 {
+	position:relative;
+	left:14%;
+}
+
+#container ul {
+	font-size:14pt;
+}
+
+#face {
+	 -webkit-transition: width 2s, height 2s, -webkit-transform 2ms;
+	 transition: width 2s, height 2s, transform 2s;
+}
+
+#face:hover {
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg);
+}
+
+#family {
+	display:block;
+	position: absolute;
+}
+
+
+#rightcol {
+	position:absolute;
+	right:-10%;
+	top:50%;
+	
+}
+
+#rightcol p {
+	position:absolute;
+	margin:left:1%;
+	right:5%;
+	width:48%;
+	border-left-style:solid;
+	border-bottom-style:solid;
+	padding-bottom:5%;
+	padding-left:5%;
+}
+
+#container #rightcol h2 {
+	position:relative;
+	left:45%;
+}
+
+#leftcol {
+	display:block;
+	position: relative;
+}
+
+#about {
+	left: -8%;
+} 
+
+#about h2, #family h2 {
+	left:0%;
+}
+
+#about p {
+	width:45%;
+}
+
+#container #leftcol p {
+	left:15%;
+	width:48%;
+}
+
+#container #rightcol {
+	right:12%;
+	width:48%;
+}
+
+#container #family {
+	top:30%;
+	right:1%;
+	float:right;
+	width:60%;
+	margin-right:1%;
+}
+
+
